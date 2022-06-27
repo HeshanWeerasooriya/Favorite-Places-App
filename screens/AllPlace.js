@@ -1,7 +1,7 @@
+import { Text } from "react-native";
+
 function AllPlace() {
-  return (
-    <div>AllPlace</div>
-  )
+  return <Text>AllPlace</Text>;
 }
 
-export default AllPlace
+export default AllPlace;
