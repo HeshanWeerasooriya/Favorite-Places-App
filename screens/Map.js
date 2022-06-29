@@ -9,7 +9,9 @@ function Map() {
     longitudeDelta: 0.0421,
   };
 
-  return <MapView style={styles.map} initialRegion={region}></MapView>;
+
+
+  return <MapView style={styles.map} initialRegion={region} ></MapView>;
 }
 
 export default Map;
