@@ -7,8 +7,10 @@ import {
 
 import { Colors } from "../../constants/colors";
 import OutlinedButton from "../UI/OutlinedButton";
+import { useNavigation } from "@react-navigation/native";
 
 function LocationPicker() {
+  const navigation = useNavigation();
   const [locationPermissionInformation, requestPermission] =
     useForegroundPermissions();
 
@@ -43,7 +45,9 @@ function LocationPicker() {
     console.log(location);
   }
 
-  function pickOnMapHandler() {}
+  function pickOnMapHandler() {
+    navigation.navigate("Map");
+  }
 
   return (
     <View>
